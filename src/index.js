@@ -1,4 +1,4 @@
-import { fetchLatestVideos } from "./youtube/fetchVideos.js";
+import { fetchLatestVideos } from "./youtube/fetch.js";
 import { summarizeText } from "./ai/summarize.js";
 import { sendEmailNotification } from "./notify/email.js";
 import { loadNotified, saveNotified } from "./storage/store.js";
