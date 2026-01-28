@@ -45,13 +45,13 @@ cd youtube-notifier
 5. Clone the repository:
 
 ```bash
-git clone https://github.com/dhruvil0203/youtube-upload-notifier.git
+git clone https://github.com/dhruvil0203/youtube-ai-notifier.git
 ```
 
-6. Enter the cloned project folder:
+6.Install dependency cloned project folder:
 
 ```bash
-cd youtube-notifier
+npm install
 ```
 
 ✅ **Done!** You now have the project on your computer.
@@ -522,4 +522,5 @@ Remember: Every developer gets stuck sometimes. That's how we learn! 💪
 **Built with ❤️ using Node.js & AI**
 
 ⭐ If this project helped you, give it a star on GitHub!
+
 
