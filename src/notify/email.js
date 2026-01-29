@@ -9,17 +9,20 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-export async function sendEmailNotification(subject, text) {
+export async function sendEmailNotification(subject, htmlContent) {
   try {
     const info = await transporter.sendMail({
-      from: ENV.EMAIL_USER,
+      from: `"YouTube AI Notifier 🎬" <${ENV.EMAIL_USER}>`,
       to: ENV.EMAIL_TO,
       subject,
-      text,
+      html: htmlContent, // HTML content
+      text: htmlContent.replace(/<[^>]*>/g, ""), // Plain text fallback
     });
 
-    console.log("✅ Email sent successfully:", info.response);
+    console.log("✅ Email sent successfully:", info.messageId);
+    return true;
   } catch (err) {
-    console.error("❌ Email Error:", err);
+    console.error("❌ Email Error:", err.message);
+    return false;
   }
 }
