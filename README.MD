@@ -178,17 +178,6 @@ Edit `src/ai/summarize.js`:
 
 ---
 
-## 🐛 Troubleshooting
-
-| Problem                           | Solution                                                                                             |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------- |
-| **Missing environment variables** | Verify all 6 variables exist in `.env`                                                               |
-| **Email not sending**             | Use Gmail App Password with 2FA enabled                                                              |
-| **No videos detected**            | Confirm Channel ID is correct                                                                        |
-| **Quota exceeded error**          | YouTube API limit reached; reduce check frequency                                                    |
-| **AI summary fails**              | Check Gemini API key and rate limits at [Google AI Studio](https://makersuite.google.com/app/apikey) |
-| **Duplicate notifications**       | Delete `notified.json` to reset                                                                      |
-
 ---
 
 ## 📄 License
